@@ -6,4 +6,10 @@
   <ItemGroup>
     <None Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes\Note.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\types.h" />
+  </ItemGroup>
 </Project>

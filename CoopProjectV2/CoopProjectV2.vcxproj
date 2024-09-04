@@ -24,6 +24,12 @@
   <ItemGroup>
     <None Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes\Note.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\types.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
