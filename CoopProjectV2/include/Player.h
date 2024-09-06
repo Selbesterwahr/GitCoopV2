@@ -6,8 +6,8 @@ class Player
 {
 public:
 	Player(const std::string& name);
-	void					SavePlayer(const std::string& filename) const;
-	void					LoadPlayer(const std::string& filename);
+	bool					SavePlayer(const std::string& filename) const;
+	bool					LoadPlayer(const std::string& filename);
 	std::string				GetPlayerName() const;
 	void					GetPlayerInventory() const;
 	void					AddItemToInventory(const std::string& itemName, int quantity);

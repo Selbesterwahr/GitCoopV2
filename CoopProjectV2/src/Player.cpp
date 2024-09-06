@@ -8,7 +8,7 @@ Player::Player(const std::string& name)
 {
 }
 
-void Player::SavePlayer(const std::string& filename) const
+bool Player::SavePlayer(const std::string& filename) const
 {
 	std::ofstream outFile(filename);
 	if (outFile.is_open())
@@ -16,15 +16,15 @@ void Player::SavePlayer(const std::string& filename) const
 		outFile << mName << "\n";
 		mPlayerInventory.SaveInventory(outFile);
 		outFile.close();
-		std::cout << "Player saved to " << filename << std::endl;
+		return true;
 	}
 	else
 	{
-		std::cerr << "Failed save!" << std::endl;
+		return false;
 	}
 }
 
-void Player::LoadPlayer(const std::string& filename)
+bool Player::LoadPlayer(const std::string& filename)
 {
 	std::ifstream inFile(filename);
 	if (inFile.is_open())
@@ -32,11 +32,11 @@ void Player::LoadPlayer(const std::string& filename)
 		std::getline(inFile, mName);
 		mPlayerInventory.LoadInventory(inFile);
 		inFile.close();
-		std::cout << "Player loaded" << std::endl;
+		return true;
 	}
 	else
 	{
-		std::cerr << "Failed load" << std::endl;
+		return false;
 	}
 }
 
