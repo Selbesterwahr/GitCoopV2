@@ -8,5 +8,6 @@ enum class GameState {
 	Loading,
 	Inventory,
 	Paused,
-	GameOver
+	GameOver,
+	NullState
 };

@@ -8,7 +8,6 @@ void Inventory::SaveInventory(std::ofstream& outFile) const
 	{
 		outFile << item.first << " " << item.second << "\n";
 	}
-	std::cout << "Inventory saved" << std::endl;
 }
 
 void Inventory::LoadInventory(std::ifstream& inFile)
@@ -20,7 +19,6 @@ void Inventory::LoadInventory(std::ifstream& inFile)
 	{
 		mInventory[itemName] = quantity;
 	}
-	std::cout << "Inventory loaded" << std::endl;
 }
 
 void Inventory::DisplayItems() const

@@ -3,9 +3,8 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Game.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".gitignore" />
+    <ClCompile Include="src\Inventory.cpp" />
+    <ClCompile Include="src\Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="notes\Note.txt" />
@@ -13,6 +12,9 @@
   <ItemGroup>
     <ClInclude Include="include\types.h" />
     <ClInclude Include="include\Game.h" />
-    <ClInclude Include="GameStates.h" />
+    <ClInclude Include="include\GameStates.h" />
+    <ClInclude Include="include\Inventory.h" />
+    <ClInclude Include="include\RandomNum.h" />
+    <ClInclude Include="include\Player.h" />
   </ItemGroup>
 </Project>
